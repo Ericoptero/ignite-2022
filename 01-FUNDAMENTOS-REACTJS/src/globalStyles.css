@@ -15,6 +15,10 @@
   --green-300: #00b37e;
 }
 
+:focus {
+  outline: 2px solid var(--green-500);
+}
+
 * {
   margin: 0;
   padding: 0;
