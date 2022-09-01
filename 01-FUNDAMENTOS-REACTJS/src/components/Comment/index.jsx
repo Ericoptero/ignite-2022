@@ -3,7 +3,7 @@ import { Avatar } from '../Avatar';
 
 import styles from './styles.module.css';
 
-export function Comment() {
+export function Comment({ content }) {
   return(
     <div className={styles.comment}>
       <Avatar src="https://github.com/ericoptero.png" />
@@ -21,7 +21,7 @@ export function Comment() {
             </button>
           </header>
 
-          <p>Muito bom Devon, parabéns!! 👏👏</p>
+          <p>{content}</p>
         </div>
 
         <footer>
