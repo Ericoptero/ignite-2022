@@ -3,7 +3,12 @@ import { Avatar } from '../Avatar';
 
 import styles from './styles.module.css';
 
-export function Comment({ content }) {
+export function Comment({ content, onDeleteComment }) {
+
+  function handleDeleteComment() {
+    onDeleteComment(content)
+  }
+
   return(
     <div className={styles.comment}>
       <Avatar src="https://github.com/ericoptero.png" />
@@ -17,7 +22,7 @@ export function Comment({ content }) {
             </div>
 
             <button title="Deletar comentário">
-              <Trash size="1.5rem" />
+              <Trash onClick={handleDeleteComment} size="1.5rem" />
             </button>
           </header>
 
