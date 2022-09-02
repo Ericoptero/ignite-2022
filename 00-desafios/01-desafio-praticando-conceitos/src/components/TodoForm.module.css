@@ -1,0 +1,41 @@
+.form {
+  display: flex;
+  gap: .5rem;
+  margin-top: -1.6875rem;
+}
+
+.form input {
+  flex: 1;
+  padding: 1rem;
+  border: 0;
+  border-radius: 8px;
+  background: var(--gray-50);
+  font-size: 1rem;
+  color: var(--gray-10);
+}
+
+.form input:placeholder {
+  color: var(--gray-30);
+}
+
+.form input:focus {
+  outline-width: 1px;
+}
+
+.form button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: 8px;
+  background: var(--blue-75);
+  font-weight: 700;
+  color: var(--gray-10);
+
+  transition: background-color 0.2s;
+}
+
+.form button:hover {
+  background: var(--blue-50);
+}

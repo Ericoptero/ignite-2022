@@ -25,6 +25,10 @@
   box-sizing: border-box;
 }
 
+:focus {
+  outline: 2px solid var(--purple-75);
+}
+
 body {
   background: var(--gray-60);
   color: var(--gray-30);

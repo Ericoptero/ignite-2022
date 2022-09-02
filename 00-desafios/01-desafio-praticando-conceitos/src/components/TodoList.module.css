@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.createdTasks,
+.doneTasks {
+  display: flex;
+  gap: .5rem;
+  font-weight: 700;
+}
+
+.createdTasks span,
+.doneTasks span {
+  background: var(--gray-40);
+  padding: .125rem .5rem;
+  border-radius: 100px;
+  font-size: .75rem;
+  color: var(--gray-20);
+}
+
+.createdTasks {
+  color: var(--blue-50);
+}
+
+.doneTasks {
+  color: var(--purple-50);
+}
