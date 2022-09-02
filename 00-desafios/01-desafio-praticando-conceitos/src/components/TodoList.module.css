@@ -61,7 +61,7 @@
   border-radius: 8px;
   cursor: pointer;
 
-  transition: text-decoration 0.2s;
+  transition: text-decoration 0.2s, color 0.2s;
 }
 
 .task + .task {
@@ -81,6 +81,7 @@
 }
 
 .task > p {
+  flex: 1;
   color: var(--gray-10);
 }
 
