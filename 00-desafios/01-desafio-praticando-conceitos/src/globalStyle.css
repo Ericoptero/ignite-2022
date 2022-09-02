@@ -1,0 +1,41 @@
+:root {
+  /* COLORS */
+  --purple-50: #8284FA;
+  --purple-75: #5E60CE;
+  --blue-50: #4EA8DE;
+  --blue-75: #1E6F9F;
+  --red-50: #E25858;
+
+  /* COLORS - MONOCHROMATIC */
+  --gray-70: #0D0D0D;
+  --gray-60: #1A1A1A;
+  --gray-50: #262626;
+  --gray-40: #333333;
+  --gray-30: #808080;
+  --gray-20: #D9D9D9;
+  --gray-10: #F2F2F2;
+
+  /* FONTS */
+  --primary-font: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gray-60);
+  color: var(--gray-30);
+}
+
+body, input, textarea, button {
+  font-family: var(--primary-font);
+  font-size: .875rem;
+  line-height: 1.4;
+}
+
+button {
+  cursor: pointer;
+}

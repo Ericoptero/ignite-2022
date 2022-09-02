@@ -1,34 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import './globalStyle.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+import { Header } from './components/Header';
 
+export function App() {
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <>
+      <Header />
+
+      <form>
+        <input type="text" placeholder='Adicione uma nova tarefa' />
+        <button type="submit">
+          Criar
+          <img src="" alt="" />
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+      </form>
+
+      <main>
+        <header>
+          <div>
+            Tarefas criadas
+            <span>0</span>
+          </div>
+          <div>
+            Concluídas
+            <span>0</span>
+          </div>
+        </header>
+        
+        <section>
+          <div>
+            <img src="" alt="" />
+            <strong>Você ainda não tem tarefas cadastradas</strong>
+            <p>Crie tarefas e organize seus itens a fazer</p>
+          </div>
+        </section>
+      </main>
+    </>
   )
 }
-
-export default App
