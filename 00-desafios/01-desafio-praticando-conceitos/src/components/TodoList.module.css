@@ -26,3 +26,84 @@
 .doneTasks {
   color: var(--purple-50);
 }
+
+.emptyTasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4rem 1.5rem;
+  border-top: 1px solid var(--gray-40);
+  border-radius: 8px;
+}
+
+.emptyTasks img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.emptyTasks strong,
+.emptyTasks p {
+  font-size: 1rem;
+  color: var(--gray-30);
+}
+
+.task {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: var(--gray-50);
+  gap: .75rem;
+  min-height: 4.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: text-decoration 0.2s;
+}
+
+.task + .task {
+  margin-top: .75rem;
+}
+
+.task > svg {
+  margin: .125rem;
+}
+
+.checkCircle {
+  color: var(--purple-75);
+}
+
+.circle {
+  color: var(--blue-50);
+}
+
+.task > p {
+  color: var(--gray-10);
+}
+
+.task > button {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+}
+
+.task > button svg {
+  color: var(--gray-30);
+}
+
+.task > button:hover svg {
+  color: var(--red-50);
+}
+
+.taskChecked > p {
+  text-decoration: line-through;
+  color: var(--gray-30);
+}
